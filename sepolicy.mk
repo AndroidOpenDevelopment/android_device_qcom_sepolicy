@@ -91,6 +91,8 @@ BOARD_SEPOLICY_UNION += \
        mediaserver_test.te \
        hbtp.te
 
+-include device/qcom/sepolicy/$(TARGET_BOARD_PLATFORM)/Android.mk
+
 # Compile sensor pilicy only for SSC targets
 SSC_TARGET_LIST := apq8084
 SSC_TARGET_LIST += msm8226

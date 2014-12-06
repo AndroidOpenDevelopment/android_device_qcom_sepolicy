@@ -1,5 +1,4 @@
 # Board specific SELinux policy variable definitions
-ifeq ($(call is-vendor-board-platform,QCOM),true)
 BOARD_SEPOLICY_DIRS += \
        device/qcom/sepolicy \
        device/qcom/sepolicy/common \
@@ -104,5 +103,3 @@ SSC_TARGET_LIST += msm8994
 BOARD_SEPOLICY_UNION += sensors.te
 BOARD_SEPOLICY_UNION += sensors_test.te
 #endif
-
-endif
